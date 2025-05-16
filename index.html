@@ -1,0 +1,178 @@
+Skip to content
+Navigation Menu
+alura-cursos
+js-projeto-de-vida
+
+Type / to search
+Code
+Pull requests
+Actions
+Projects
+Security
+Insights
+Commit a81575d
+giullianacestari
+giullianacestari
+authored
+on Nov 22, 2024
+Verified
+ajuste de indentação
+aula5
+1 parent 
+5d76ada
+ commit 
+a81575d
+File tree
+Filter files…
+index.html
+main.js
+style.css
+3 files changed
++42
+-36
+lines changed
+Search within code
+ 
+‎index.html
++29
+-26
+Original file line number	Diff line number	Diff line change
+@@ -1,45 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Cursos na Alura</button>
+            <button class="botao">Criar projetos em Javascript</button>
+            <button class="botao">Criar um portfolio</button>
+            <button class="botao">Atualizar meu currículo</button>
+        </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            <div class="botoes">
+                <button class="botao ativo">Cursos na Alura</button>
+                <button class="botao">Criar projetos em Javascript</button>
+                <button class="botao">Criar um portfolio</button>
+                <button class="botao">Atualizar meu currículo</button>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
+‎main.js
++2
+-2
+Original file line number	Diff line number	Diff line change
+@@ -31,6 +31,6 @@ function calculaTempo(tempoObjetivo) {
+    segundos %= 60;
+    minutos %= 60;
+    horas %= 24;
+ 
+ return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+    return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+}
+‎style.css
++11
+-8
+Original file line number	Diff line number	Diff line change
+@@ -61,34 +61,37 @@ body {
+    display: block;
+}
+
+.botao.ativo{
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo{
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.contador{
+.contador {
+    font-size: 20px;
+    text-align: center;
+}
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
+
+Selection Cleared
